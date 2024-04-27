@@ -21,7 +21,7 @@ const Login = () => {
 
   const onPasswordChange = (e) => {
     var password = e.target.value;
-    if (password != "") {
+    if (password !== "") {
       setPassword({ value: password });
     } else {
       setPassword({ value: password, message: "Write Password" });
@@ -83,7 +83,7 @@ const Login = () => {
       />
         <div className="w-full max-w-lg mt-8 shadow-xl px-10">
           <h2 className="text-2xl font-bold text-center mb-6 mt-8">
-            Welcome to EventM.
+            Login
           </h2>
 
           <div className="mb-4">

@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/events.png";
+import logo from "../assets/home.jpg";
 import { IoMdSearch } from 'react-icons/io';
 
 function Header() {

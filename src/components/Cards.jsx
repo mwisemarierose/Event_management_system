@@ -25,7 +25,7 @@ const SingleService = ({ event }) => {
 
   const onChangeNumTickects = (e) => {
     var numTickets = e.target.value;
-    if (numTickets != "") {
+    if (numTickets !== "") {
       setNumTickets({ value: numTickets });
     } else {
       setNumTickets({ value: numTickets, message: "Write num tickets" });
@@ -55,7 +55,6 @@ const SingleService = ({ event }) => {
           }
         );
         navigate("/dashboard/myevents");
-        console.log(res.data);
       
         if (res.data) {
           toast.success("Booking successful!");

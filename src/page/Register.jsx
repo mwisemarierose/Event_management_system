@@ -103,7 +103,7 @@ const Register = () => {
         />
         <div className="w-full max-w-lg mt-8 shadow-xl px-10">
           <h2 className="text-2xl font-bold text-center mb-6 mt-8">
-            Welcome to EventM.
+            Register
           </h2>
 
           <div className="mb-4">
