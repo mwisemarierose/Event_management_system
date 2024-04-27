@@ -41,12 +41,12 @@ const SingleService = ({ event }) => {
       setNumTickets({ message: "Write num tickets" });
     } else {
       const payload = {
-        numTickets: numTickets.value, // Access the value property of numTickets object
+        numTickets: numTickets.value, 
       };
       try {
         setLoaading(true);
         const res = await axios.post(
-          `http://localhost:3000/api/booking/${event._id}`, // Access the _id property of the event object
+          `http://localhost:3000/api/booking/${event._id}`, 
           payload,
           {
             headers: {
@@ -56,14 +56,14 @@ const SingleService = ({ event }) => {
         );
         navigate("/dashboard/myevents");
         console.log(res.data);
-        // Check if booking was successful
+      
         if (res.data) {
           toast.success("Booking successful!");
-          // Close the modal after booking
+         
           closeModal();
         }
       } catch (error) {
-        // Handle errors
+        
         console.error("Booking failed:", error);
         toast.error("Booking failed. Please try again.");
       }
